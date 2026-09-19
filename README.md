@@ -5,7 +5,7 @@ main documentation only (this README)
 └── develop empty Java project skeleton — never receives merges
     ├── feature/session_1
     ├── feature/session_2
-    └── feature/session_3
+    └── feature/session_4
 ```
 
 Every session branch is cut from `develop`. Feature branches are kept separate and are never merged back, so `develop` stays a clean, empty base project all semester and each session branch is a self-contained snapshot of one week's work.
@@ -20,7 +20,7 @@ Every session branch is cut from `develop`. Feature branches are kept separate a
 | `develop` | Empty Java project skeleton | — | — | — |
 | [`feature/session_1`](https://github.com/rajdeep-pixel/step-classes-03/tree/feature/session_1) | Week 1 — Java fundamentals | `string` | 5 | 5 |
 | [`feature/session_2`](https://github.com/rajdeep-pixel/step-classes-03/tree/feature/session_2) | Week 2 — Strings | `string` | 5 | 5 |
-| [`feature/session_3`](https://github.com/rajdeep-pixel/step-classes-03/tree/feature/session_3) | Week 3 — Functions & arrays | `arrays` | 5 | 5 |
+| [`feature/session_4`](https://github.com/rajdeep-pixel/step-classes-03/tree/feature/session_4) | Week 4 — Functions & arrays | `arrays` | 5 | 5 |
 
 **30 Java files solved to date.** Each session branch carries its own focused codebase with class exercises and homework assignments.
 
@@ -45,9 +45,9 @@ src/main/java/<topic>/
 
 Every class has its own `main` method, so each problem runs standalone from the command line or any IDE.
 
-### Compile and run Session 3 (Functions & Arrays):
+### Compile and run Session 4 (Functions & Arrays):
 ```bash
-git checkout feature/session_3
+git checkout feature/session_4
 javac -d out $(find src/main/java -name '*.java')
 java -cp out arrays.assigment_problems.MaximumSubarray
 ```
@@ -110,7 +110,7 @@ Variables and primitive types, arithmetic and relational operators, `Math.random
 
 ---
 
-### Session 3 — Functions & Arrays (`arrays`)
+### Session 4 — Functions & Arrays (`arrays`)
 
 | Type | Problem | Approach |
 | :--- | :--- | :--- |
@@ -132,11 +132,11 @@ Two-pointer inward traversal, prefix & suffix accumulation passes, greedy single
 
 ## Known Gaps & Future Enhancements
 
-- **Package Naming:** `feature/session_1` and `feature/session_2` use `string` as their top-level package, while `feature/session_3` uses `arrays`.
+- **Package Naming:** `feature/session_1` and `feature/session_2` use `string` as their top-level package, while `feature/session_4` uses `arrays`.
 - **Directory Spelling:** The folder name `assigment_problems` is consistently spelled without the second 'n' across all branches; kept uniform across the project.
 - **Optimization Opportunities:**
-  - `TwoSum` and `ContainsDuplicate` in Session 3 use $O(n^2)$ brute-force implementations as required by the initial live session; refactoring to $O(n)$ using `HashMap` and `HashSet` is scheduled for interview prep.
-  - Session 3 `MaximumSubarray` currently implements Kadane's $O(n)$ algorithm; implementing the Divide-and-Conquer $O(n \log n)$ alternative is planned as an interview follow-up.
+  - `TwoSum` and `ContainsDuplicate` in Session 4 use $O(n^2)$ brute-force implementations as required by the initial live session; refactoring to $O(n)$ using `HashMap` and `HashSet` is scheduled for interview prep.
+  - Session 4 `MaximumSubarray` currently implements Kadane's $O(n)$ algorithm; implementing the Divide-and-Conquer $O(n \log n)$ alternative is planned as an interview follow-up.
 
 ---
 
@@ -144,13 +144,13 @@ Two-pointer inward traversal, prefix & suffix accumulation passes, greedy single
 
 ### Date: 05-09-2026
 **Today's Work:**
-- Completed Week 3 (Functions & Arrays) Category C live-session array logic problems in `feature/session_3` under `arrays/class_problems`:
+- Completed Week 4 (Functions & Arrays) Category C live-session array logic problems in `feature/session_4` under `arrays/class_problems`:
   - `TwoSum`: Brute-force nested loop search for target pair.
   - `ContainsDuplicate`: Pairwise scan detecting duplicates.
   - `MergeSortedArrays`: Two-pointer merge with tail drain into a clean result array.
   - `RotateArray`: Direct index remapping `(i + k) % n` into a fresh array; handled `k > n` with `k % n` and negative shifts.
   - `StockBuySell`: One-pass minimum tracking ensuring buy occurs before sell.
-- Solved all 5 Category C assignment problems on `feature/session_3` under `arrays/assigment_problems`:
+- Solved all 5 Category C assignment problems on `feature/session_4` under `arrays/assigment_problems`:
   - `ProductExceptSelf`: Prefix and suffix multiplication passes with zero division.
   - `MaximumSubarray`: Kadane's algorithm seeded with `nums[0]` to correctly handle all-negative inputs.
   - `ThreeSum`: Sort + two-pointer scan with duplicate pruning at anchor and both pointers.
@@ -166,7 +166,7 @@ Two-pointer inward traversal, prefix & suffix accumulation passes, greedy single
   - `RockPaperScissors`, `PalindromeChecker`, `BmiCalculator`, `UniqueLetterHunt`, `CustomerVerification`.
 
 **Next Session Plan:**
-- Prepare for Session 4 (OOP / Classes & Objects).
+- Prepare for Session 5 (Arrays & Object-Oriented Ranking Engines).
 - Implement $O(n)$ `HashMap` versions of `TwoSum` and `ContainsDuplicate`.
 - Implement Divide-and-Conquer $O(n \log n)$ variant for `MaximumSubarray`.
 
@@ -183,4 +183,4 @@ Two-pointer inward traversal, prefix & suffix accumulation passes, greedy single
 - Initialized repository structure following Semester 3 guidelines.
 - Established `main` for documentation and progress logging.
 - Created `develop` branch with base project skeleton (`src/main/java/.gitkeep`, `.gitignore`).
-- Cut independent feature branches (`feature/session_1`, `feature/session_2`, `feature/session_3`) from `develop`.
+- Cut independent feature branches (`feature/session_1`, `feature/session_2`, `feature/session_4`) from `develop`.
