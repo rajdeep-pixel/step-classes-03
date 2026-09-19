@@ -7,7 +7,7 @@ main documentation only (this README)
     ├── feature/session_2
     ├── feature/session_4
     ├── feature/session_5
-    └── session6
+    └── feature/session_6
 ```
 
 Every session branch is cut from `develop`. Feature branches are kept separate and are never merged back, so `develop` stays a clean, empty base project all semester and each session branch is a self-contained snapshot of one week's work.
@@ -24,7 +24,7 @@ Every session branch is cut from `develop`. Feature branches are kept separate a
 | [`feature/session_2`](https://github.com/rajdeep-pixel/step-classes-03/tree/feature/session_2) | Week 2 — Strings | `string` | 5 | 5 |
 | [`feature/session_4`](https://github.com/rajdeep-pixel/step-classes-03/tree/feature/session_4) | Week 4 — Functions & arrays | `arrays` | 5 | 5 |
 | [`feature/session_5`](https://github.com/rajdeep-pixel/step-classes-03/tree/feature/session_5) | Week 5 — Arrays, Overloading & OOP Ranking Engines | `arrays` | 5 | 5 |
-| [`session6`](https://github.com/rajdeep-pixel/step-classes-03/tree/session6) | Week 6 — Object-Oriented Programming (OOP) | `oop` | 5 | 5 |
+| [`feature/session_6`](https://github.com/rajdeep-pixel/step-classes-03/tree/feature/session_6) | Week 6 — Object-Oriented Programming (OOP) | `oop` | 5 | 5 |
 
 **50 Java files solved to date.** Each session branch carries its own focused codebase with class exercises and homework assignments.
 
@@ -51,7 +51,7 @@ Every class has its own `main` method, so each problem runs standalone from the 
 
 ### Compile and run Session 6 (Object-Oriented Programming):
 ```bash
-git checkout session6
+git checkout feature/session_6
 javac -d out $(find src/main/java -name '*.java')
 
 # Run Class Problems:
@@ -228,7 +228,7 @@ java -cp out string.class_problems.RockPaperScissors
 
 ### Date: 19-09-2026 (Session 6)
 **Today's Work:**
-- Created and checked out new branch `session6` directly from base `develop`.
+- Created and checked out new branch `feature/session_6` directly from base `develop`.
 - Solved all 5 Category C Class Problems under `oop/class_problems` with strictly zero comments:
   - `PlacementRecord`: Student placement record management with array iteration.
   - `MessWallet`: Encapsulated hostel mess wallet with non-negative balance enforcement.
@@ -242,7 +242,7 @@ java -cp out string.class_problems.RockPaperScissors
   - `HallTicket`: Exam hall ticket reference aliasing and equality verification.
   - `CompanyEmployee`: Company information and auto-incrementing staff counter via static members.
 - Verified 100% test pass rate across all 10 problem suites, clean compilation with `javac`, and verified complete absence of comments in all source files.
-- Synchronized documentation in `README.md` across both `session6` and `main` branches.
+- Synchronized documentation in `README.md` across both `feature/session_6` and `main` branches.
 
 ---
 
