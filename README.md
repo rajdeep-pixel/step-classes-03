@@ -6,7 +6,8 @@ main documentation only (this README)
     ├── feature/session_1
     ├── feature/session_2
     ├── feature/session_4
-    └── feature/session_5
+    ├── feature/session_5
+    └── session6
 ```
 
 Every session branch is cut from `develop`. Feature branches are kept separate and are never merged back, so `develop` stays a clean, empty base project all semester and each session branch is a self-contained snapshot of one week's work.
@@ -23,8 +24,9 @@ Every session branch is cut from `develop`. Feature branches are kept separate a
 | [`feature/session_2`](https://github.com/rajdeep-pixel/step-classes-03/tree/feature/session_2) | Week 2 — Strings | `string` | 5 | 5 |
 | [`feature/session_4`](https://github.com/rajdeep-pixel/step-classes-03/tree/feature/session_4) | Week 4 — Functions & arrays | `arrays` | 5 | 5 |
 | [`feature/session_5`](https://github.com/rajdeep-pixel/step-classes-03/tree/feature/session_5) | Week 5 — Arrays, Overloading & OOP Ranking Engines | `arrays` | 5 | 5 |
+| [`session6`](https://github.com/rajdeep-pixel/step-classes-03/tree/session6) | Week 6 — Object-Oriented Programming (OOP) | `oop` | 5 | 5 |
 
-**40 Java files solved to date.** Each session branch carries its own focused codebase with class exercises and homework assignments.
+**50 Java files solved to date.** Each session branch carries its own focused codebase with class exercises and homework assignments.
 
 ---
 
@@ -46,6 +48,26 @@ src/main/java/<topic>/
 ## How to Run
 
 Every class has its own `main` method, so each problem runs standalone from the command line or any IDE.
+
+### Compile and run Session 6 (Object-Oriented Programming):
+```bash
+git checkout session6
+javac -d out $(find src/main/java -name '*.java')
+
+# Run Class Problems:
+java -cp out oop.class_problems.PlacementRecord
+java -cp out oop.class_problems.MessWallet
+java -cp out oop.class_problems.Course
+java -cp out oop.class_problems.IdCard
+java -cp out oop.class_problems.Student
+
+# Run Assignment Problems:
+java -cp out oop.assigment_problems.BookInventory
+java -cp out oop.assigment_problems.PayrollAccount
+java -cp out oop.assigment_problems.Employee
+java -cp out oop.assigment_problems.HallTicket
+java -cp out oop.assigment_problems.CompanyEmployee
+```
 
 ### Compile and run Session 5 (Arrays & Object-Oriented Ranking Engines):
 ```bash
@@ -173,7 +195,56 @@ java -cp out string.class_problems.RockPaperScissors
 
 ---
 
+### Session 6 — Object-Oriented Programming (OOP) (`oop`)
+
+#### Class Problems (`oop/class_problems`)
+| Type | Problem | Signature / Construct | Approach / Description |
+| :--- | :--- | :--- | :--- |
+| Class | `PlacementRecord` | `PlacementRecord(String, String, double)` / `printRecord()` | Models student placement records; instantiates record objects iterated and formatted via array traversal. |
+| Class | `MessWallet` | `topUp(double)`, `deduct(double)`, `getBalance()` | Encapsulated hostel mess wallet with private balance, constructor validation, non-positive guards, and negative balance protection. |
+| Class | `Course` | `Course(String, String, int, int)`, `Course(String, String, int)` | Constructor overloading utilizing `this(...)` constructor chaining for theory-only courses defaulting lab credits to 0. |
+| Class | `IdCard` | `IdCard(String, int)` | Reference aliasing demonstration; proves variable reference sharing (`== true`) vs separate object identity (`== false`). |
+| Class | `Student` | `static printCollegeInfo()` | Static members (`collegeName`, `studentCount`) shared across instances; static method accessing only static context. |
+
+#### Assignment Problems (`oop/assigment_problems`)
+| Type | Problem | Signature / Construct | Approach / Description |
+| :--- | :--- | :--- | :--- |
+| Assignment | `BookInventory` | `BookInventory(String, String, int)` / `printEntry()` | OOP library catalog tracking book title, author, and copies available in a formatted loop over object arrays. |
+| Assignment | `PayrollAccount` | `creditBonus(double)`, `deductTax(double)`, `getNetSalary()` | Encapsulated payroll model with private fields, bonus credit validation, bounded tax percentage deduction, and read-only net calculation. |
+| Assignment | `Employee` | `Employee(String, String, double)`, `Employee(String, String)` | Constructor chaining using `this(...)` to differentiate permanent employees from interns with zero initial salary and intern flag. |
+| Assignment | `HallTicket` | `HallTicket(String, int)` | Validates object reference mutation via aliasing and demonstrates equality checks (`==`) comparing memory addresses. |
+| Assignment | `CompanyEmployee` | `static printCompanyInfo()` | Class-level static state management tracking shared company name and cumulative employee count via constructor invocation. |
+
+**Key Concepts Covered:**
+- OOP data encapsulation and private access specifiers (`private` fields with getter accessors).
+- Constructor overloading and explicit constructor invocation (`this(...)` chaining).
+- Memory references, object aliasing, and reference identity vs separate instantiation (`==` comparison).
+- Class-level state (`static` variables and `static` methods) vs instance-level state.
+- Invariant protection and input validation in business models.
+
+---
+
 ## Progress Log
+
+### Date: 19-09-2026 (Session 6)
+**Today's Work:**
+- Created and checked out new branch `session6` directly from base `develop`.
+- Solved all 5 Category C Class Problems under `oop/class_problems` with strictly zero comments:
+  - `PlacementRecord`: Student placement record management with array iteration.
+  - `MessWallet`: Encapsulated hostel mess wallet with non-negative balance enforcement.
+  - `Course`: Theory and lab course credit management utilizing `this(...)` constructor chaining.
+  - `IdCard`: Library card reference management proving reference aliasing vs independent objects.
+  - `Student`: Student and college information management with static count and static printer.
+- Solved all 5 Category C Assignment Problems under `oop/assigment_problems` with strictly zero comments:
+  - `BookInventory`: Library inventory management replacing parallel arrays with OOP objects.
+  - `PayrollAccount`: Encapsulated payroll salary management with bonus crediting and tax deduction.
+  - `Employee`: Employee profile creation supporting permanent and intern profiles via constructor chaining.
+  - `HallTicket`: Exam hall ticket reference aliasing and equality verification.
+  - `CompanyEmployee`: Company information and auto-incrementing staff counter via static members.
+- Verified 100% test pass rate across all 10 problem suites, clean compilation with `javac`, and verified complete absence of comments in all source files.
+- Synchronized documentation in `README.md` across both `session6` and `main` branches.
+
+---
 
 ### Date: 19-09-2026
 **Today's Work:**
@@ -195,7 +266,7 @@ java -cp out string.class_problems.RockPaperScissors
 - Verified 100% test pass rate across all 10 problem suites and compiled cleanly with `javac`.
 
 **Next Session Plan:**
-- Prepare for Session 6 (OOP Inheritance, Polymorphism, and Abstract Classes).
+- Prepare for Session 7 (OOP Inheritance, Polymorphism, and Abstract Classes).
 
 ---
 
