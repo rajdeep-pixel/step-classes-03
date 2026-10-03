@@ -7,7 +7,8 @@ main documentation only (this README)
     ├── feature/session_2
     ├── feature/session_4
     ├── feature/session_5
-    └── feature/session_6
+    ├── feature/session_6
+    └── feature/session_7
 ```
 
 Every session branch is cut from `develop`. Feature branches are kept separate and are never merged back, so `develop` stays a clean, empty base project all semester and each session branch is a self-contained snapshot of one week's work.
