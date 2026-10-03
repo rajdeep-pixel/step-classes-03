@@ -26,7 +26,7 @@ Every session branch is cut from `develop`. Feature branches are kept separate a
 | [`feature/session_5`](https://github.com/rajdeep-pixel/step-classes-03/tree/feature/session_5) | Week 5 — Arrays, Overloading & OOP Ranking Engines | `arrays` | 5 | 5 |
 | [`feature/session_6`](https://github.com/rajdeep-pixel/step-classes-03/tree/feature/session_6) | Week 6 — Object-Oriented Programming (OOP) | `oop` | 5 | 5 |
 
-**50 Java files solved to date.** Each session branch carries its own focused codebase with class exercises and homework assignments.
+**60 Java files solved to date.** Each session branch carries its own focused codebase with class exercises and homework assignments.
 
 ---
 
@@ -48,6 +48,26 @@ src/main/java/<topic>/
 ## How to Run
 
 Every class has its own `main` method, so each problem runs standalone from the command line or any IDE.
+
+### Compile and run Session 7 (Encapsulation & Access Control):
+```bash
+git checkout feature/session_7
+javac -d out $(find src/main/java -name '*.java')
+
+# Run Class Problems:
+java -cp out encapsulation.class_problems.PiggyBank
+java -cp out encapsulation.class_problems.Scorecard
+java -cp out encapsulation.class_problems.NameTag
+java -cp out encapsulation.class_problems.Locker
+java -cp out encapsulation.class_problems.AttendanceSheet
+
+# Run Assignment Problems:
+java -cp out encapsulation.assigment_problems.Character
+java -cp out encapsulation.assigment_problems.Playlist
+java -cp out encapsulation.assigment_problems.PasswordChecker
+java -cp out encapsulation.assigment_problems.TrafficLight
+java -cp out encapsulation.assigment_problems.Cart
+```
 
 ### Compile and run Session 6 (Object-Oriented Programming):
 ```bash
@@ -113,6 +133,35 @@ java -cp out string.class_problems.RockPaperScissors
 ---
 
 ## Contents by Session
+
+### Session 7 — Encapsulation & Access Control (`encapsulation`)
+
+#### Class Problems (`encapsulation/class_problems`)
+| Type | Problem | Approach / Description |
+| :--- | :--- | :--- |
+| Class | `PiggyBank` | Encapsulated savings app with private state, public deposit/withdraw checks, and final ID. |
+| Class | `Scorecard` | Quiz results tracker using a private boolean array and a calculated integer score getter. |
+| Class | `NameTag` | Immutable nickname builder separating and storing parsed name string fragments as final fields. |
+| Class | `Locker` | Gym locker managing password changes via internal current-code validation and write-only setters. |
+| Class | `AttendanceSheet` | Class attendance tracker appending unique names to a private array without exposing the collection itself. |
+
+#### Assignment Problems (`encapsulation/assigment_problems`)
+| Type | Problem | Approach / Description |
+| :--- | :--- | :--- |
+| Assignment | `Character` | Game health management applying boundary checks (clamping to 0 and maxHealth) on mutation. |
+| Assignment | `Playlist` | Safe playlist array returning a copied clone `Arrays.copyOf()` to prevent external mutation of internal state. |
+| Assignment | `PasswordChecker` | Password strength analyzer with write-only string field evaluating logic directly on getter. |
+| Assignment | `TrafficLight` | Forward-only state machine cycling through restricted sequential color values via `next()`. |
+| Assignment | `Cart` | Read-only summation calculating dynamic cumulative totals internally from a private item prices array. |
+
+**Key Concepts Covered:**
+- Encapsulation to protect sensitive fields and prevent invalid states.
+- Read-only getters preventing direct modification of fields.
+- Safe exposure of internal arrays returning clones to avoid reference escapes.
+- Immutable classes defining state via `final` parameters with no setters.
+- Validating state transitions enforcing controlled logic inside setter methods.
+
+---
 
 ### Session 1 — Java Fundamentals (`string`)
 
@@ -225,6 +274,26 @@ java -cp out string.class_problems.RockPaperScissors
 ---
 
 ## Progress Log
+
+### Date: 03-10-2026 (Session 7)
+**Today's Work:**
+- Created and checked out new branch `feature/session_7` directly from base `develop`.
+- Solved all 5 Category C Class Problems under `encapsulation/class_problems` with strictly zero comments:
+  - `PiggyBank`: Encapsulated savings with final ID and balance validation.
+  - `Scorecard`: Private boolean array scorecard computing total score.
+  - `NameTag`: Immutable tag creating formatted nickname from full name.
+  - `Locker`: Locker combination code with secure replacement validation.
+  - `AttendanceSheet`: Array-backed attendance list preventing duplicates and exposing only count/presence.
+- Solved all 5 Category C Assignment Problems under `encapsulation/assigment_problems` with strictly zero comments:
+  - `Character`: Clamping character health within [0, maxHealth].
+  - `Playlist`: Encapsulated music array returning safe clones.
+  - `PasswordChecker`: Write-only password evaluated for strength level.
+  - `TrafficLight`: Forward-only traffic color sequence machine.
+  - `Cart`: Dynamic price aggregation masking raw individual prices.
+- Verified 100% test pass rate across all 10 problem suites, clean compilation with `javac`, and verified complete absence of comments in all source files.
+- Synchronized documentation in `README.md` across both `feature/session_7` and `main` branches.
+
+---
 
 ### Date: 19-09-2026 (Session 6)
 **Today's Work:**
