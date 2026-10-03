@@ -331,8 +331,8 @@ java -cp out string.class_problems.RockPaperScissors
 ### Date: 03-10-2026 (Session 8)
 **Today's Work:**
 - Created and checked out new branch `feature/session_8` directly from base `develop`.
-- Solved all 5 Category C Class Problems under `polymorphism/class_problems` with strictly zero comments, demonstrating run-time polymorphism.
-- Solved all 5 Category C Assignment Problems under `polymorphism/assigment_problems` with strictly zero comments using abstraction and method overriding.
+- Solved all 5 Category C Class Problems under `polymorphism/class_problems`, demonstrating run-time polymorphism.
+- Solved all 5 Category C Assignment Problems under `polymorphism/assigment_problems` using abstraction and method overriding.
 - Corrected input parsing edge cases using regex and string manipulation matching provided schemas precisely.
 - Verified 100% test pass rate across all 10 problem suites via `main()` assertions and compiled cleanly with `javac`.
 - Synchronized documentation in `README.md` across both `feature/session_8` and `main` branches.
@@ -342,19 +342,19 @@ java -cp out string.class_problems.RockPaperScissors
 ### Date: 03-10-2026 (Session 7)
 **Today's Work:**
 - Created and checked out new branch `feature/session_7` directly from base `develop`.
-- Solved all 5 Category C Class Problems under `encapsulation/class_problems` with strictly zero comments:
+- Solved all 5 Category C Class Problems under `encapsulation/class_problems`:
   - `PiggyBank`: Encapsulated savings with final ID and balance validation.
   - `Scorecard`: Private boolean array scorecard computing total score.
   - `NameTag`: Immutable tag creating formatted nickname from full name.
   - `Locker`: Locker combination code with secure replacement validation.
   - `AttendanceSheet`: Array-backed attendance list preventing duplicates and exposing only count/presence.
-- Solved all 5 Category C Assignment Problems under `encapsulation/assigment_problems` with strictly zero comments:
+- Solved all 5 Category C Assignment Problems under `encapsulation/assigment_problems`:
   - `Character`: Clamping character health within [0, maxHealth].
   - `Playlist`: Encapsulated music array returning safe clones.
   - `PasswordChecker`: Write-only password evaluated for strength level.
   - `TrafficLight`: Forward-only traffic color sequence machine.
   - `Cart`: Dynamic price aggregation masking raw individual prices.
-- Verified 100% test pass rate across all 10 problem suites, clean compilation with `javac`, and verified complete absence of comments in all source files.
+- Verified 100% test pass rate across all 10 problem suites, clean compilation with `javac`.
 - Synchronized documentation in `README.md` across both `feature/session_7` and `main` branches.
 
 ---
@@ -362,19 +362,19 @@ java -cp out string.class_problems.RockPaperScissors
 ### Date: 19-09-2026 (Session 6)
 **Today's Work:**
 - Created and checked out new branch `feature/session_6` directly from base `develop`.
-- Solved all 5 Category C Class Problems under `oop/class_problems` with strictly zero comments:
+- Solved all 5 Category C Class Problems under `oop/class_problems`:
   - `PlacementRecord`: Student placement record management with array iteration.
   - `MessWallet`: Encapsulated hostel mess wallet with non-negative balance enforcement.
   - `Course`: Theory and lab course credit management utilizing `this(...)` constructor chaining.
   - `IdCard`: Library card reference management proving reference aliasing vs independent objects.
   - `Student`: Student and college information management with static count and static printer.
-- Solved all 5 Category C Assignment Problems under `oop/assigment_problems` with strictly zero comments:
+- Solved all 5 Category C Assignment Problems under `oop/assigment_problems`:
   - `BookInventory`: Library inventory management replacing parallel arrays with OOP objects.
   - `PayrollAccount`: Encapsulated payroll salary management with bonus crediting and tax deduction.
   - `Employee`: Employee profile creation supporting permanent and intern profiles via constructor chaining.
   - `HallTicket`: Exam hall ticket reference aliasing and equality verification.
   - `CompanyEmployee`: Company information and auto-incrementing staff counter via static members.
-- Verified 100% test pass rate across all 10 problem suites, clean compilation with `javac`, and verified complete absence of comments in all source files.
+- Verified 100% test pass rate across all 10 problem suites, clean compilation with `javac`.
 - Synchronized documentation in `README.md` across both `feature/session_6` and `main` branches.
 
 ---
