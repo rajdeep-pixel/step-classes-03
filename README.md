@@ -26,6 +26,7 @@ Every session branch is cut from `develop`. Feature branches are kept separate a
 | [`feature/session_4`](https://github.com/rajdeep-pixel/step-classes-03/tree/feature/session_4) | Week 4 — Functions & arrays | `arrays` | 5 | 5 |
 | [`feature/session_5`](https://github.com/rajdeep-pixel/step-classes-03/tree/feature/session_5) | Week 5 — Arrays, Overloading & OOP Ranking Engines | `arrays` | 5 | 5 |
 | [`feature/session_6`](https://github.com/rajdeep-pixel/step-classes-03/tree/feature/session_6) | Week 6 — Object-Oriented Programming (OOP) | `oop` | 5 | 5 |
+| [`feature/session_7`](https://github.com/rajdeep-pixel/step-classes-03/tree/feature/session_7) | Week 7 — Encapsulation & Access Control | `encapsulation` | 5 | 5 |
 
 **60 Java files solved to date.** Each session branch carries its own focused codebase with class exercises and homework assignments.
 
